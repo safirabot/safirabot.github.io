@@ -96,7 +96,7 @@ button {
   .flex-container > div {
   background-color: #f1f1f1;
   margin: 10px;
-  padding: 20px;
+  padding: 20px;
   font-size: 30px;
   }
   
@@ -162,13 +162,11 @@ but {
   
     .title {
         margin-top: 0;
-        font-size: 250%;
-        font-family: exo, sans-serif;
-        font-weight: bold;
-        
+        font-size: 200%;
+        font-family: 'Roboto Mono', monospace;
     }
   
-  @import url("https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 * {
   box-sizing: border-box;
@@ -240,6 +238,32 @@ but {
     width: 250px;
   }
 
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  
+  padding: 13px;
+  color: #7e7e7e
+}
+
+#customers tr {
+  background-color: #222325
+}
+
+
+#customers th {
+  border-bottom: 1px solid #7e7e7e;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #222325;
+  color: white;
+}
+
 </style>
 </head>  
 <body>
@@ -249,19 +273,66 @@ but {
   <a href="/comandos" class="nav-item" active-color="blue">Comandos</a>
   <span class="nav-indicator"></span>
   </nav>
-  
-  <br><br><br><br><br>
-    <div class="panel panel-default">
-  <div class="panel-heading">🎶 Comandos de <strong>Música:</strong></div>
-      <div class="panel-body"><code>s!play</code> - Toque uma música e faça a festa!<br><br><code>s!skip</code> - Não gostou da música que colocou? pule ela!<br><br><code>s!volume</code> - Não está sentido pressão na sua música? aumente o volume dela!<br><br><code>s!np</code> - Em falta de uma bola de cristal, use esse comando para ver a música que está tocando.<br><br><code>s!pause</code> - Use para pausar a música<br><br><code>s!resume</code> - Use para voltar a tocar a música novamente<br><br><code>s!loop</code> - Gostou tanto da música, então deixe ela em loop.<br><br><code>s!queue</code> - Não sabe qual é a próxima música? veja todas as músicas da fila.<br><br><code>s!stop</code> - Caso não queira mais ouvir nada.<br><br><code>s!lyrics</code> - Procura a letra daquela música que você sempre quis saber. <br><br><code>s!shuffle</code> - Para embaralhar a fila</div>
-    </div>
-  <br>
-    <br>
-    <div class="panel panel-default">
-      <div class="panel-heading">🔂 Outros comandos:</div>
-      <div class="panel-body">
-        <code>s!ping</code> - Use para ver a letencia do bot<br><br><code>s!botinfo</code> - para ver informações sobre o bot<br><br> <code>s!prefix</code> - altere o prefixo dos comandos
-      </div>
-  
+  <center>
+  <p class="title" style="color:white;">Comandos de música.</p>
+  </center>
+  <br><br>
+  <table id="customers">
+  <tr>
+    <th>Comando</th>
+    <th>Aliases</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>play</td>
+    <td>p</td>
+    <td>Toque uma música.</td>
+  </tr>
+    <tr>
+    <td>pause</td>
+    <td></td>
+    <td>Pause a música que estiver tocando.</td>
+  </tr>
+    <tr>
+    <td>resume</td>
+    <td></td>
+    <td>De play na música novamente.</td>
+  </tr>
+    <tr>
+    <td>skip</td>
+    <td>s, pular</td>
+    <td>Pule para a próxima música.</td>
+  </tr>
+    <tr>
+    <td>np</td>
+    <td>nowplaying</td>
+    <td>Veja qual música está tocando no momento.</td>
+  </tr>
+    <tr>
+    <td>queue</td>
+    <td>q</td>
+    <td>Veja as próximas músicas que irão tocar.</td>
+  </tr>
+    <tr>
+    <td>disconnect</td>
+    <td>dc</td>
+    <td>Faça o bot sair do canal de voz.</td>
+  </tr>
+    <tr>
+    <td>seek</td>
+    <td></td>
+    <td>Pule para um certo tempo em uma música.</td>
+  </tr>
+    <tr>
+    <td>shuffle</td>
+    <td></td>
+    <td>Embaralhe as ordem das músicas.</td>
+  </tr>
+    <tr>
+    <td>volume</td>
+    <td>vol</td>
+    <td>Altere o volume da música.</td>
+  </tr>
+  </table>
   </body>
 </html>
