@@ -41,7 +41,8 @@
         float: center;
 }
 
-div {
+div { 
+
   text-align: center;
      font-family: 'Titillium Web'; 
 }
@@ -120,14 +121,21 @@ div {
   }
 } 
 
-  
+  h1 {
+  font-weight: bold;
+  color: white;
+  }
+  h2 {
+  font-family: "Helvética";
+  color: white;
+}
+p{ color:white}
   
   .title { 
   margin-top: -80;
         color: white;
         font-size: 25px;
-        font-family: 'Inconsolata', monospace !important;
-font-family: 'Roboto Mono', monospace !important;
+font-family: 'Roboto Mono', monospace;
     }
     .addToServerButton {
     background-color: #05d3e0; 
@@ -177,9 +185,23 @@ font-family: 'Roboto Mono', monospace !important;
     transform: translateX(0);
   }
   }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@379&family=Roboto+Mono&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@379&family=Roboto+Mono&display=swap');
+.infos{
+text-align:center;
+width: 100%;
+font-size: 100%;
+margin:auto;
+font-family: 'Roboto Mono', monospace;
+padding:8px;
+}
+
+@media(min-width: 600px){
+    .infos{
+        font-size: 200%;
+    }
+   }
 </style>
 </head>  
 <body>
@@ -199,6 +221,19 @@ font-family: 'Roboto Mono', monospace !important;
 <div>
 <button class="addToServerButton"><i class="fa fa-user-plus"></i> Adicionar ao servidor</button>
 <button class="voteButton"><i class="fa fa-plus"></i> Vote em mim</button>
-
+</div>
+  <div class="infos">
+    <h1>Conheça a safira</h1>
+    <p>A safira é uma bot de música totalmente de graça feita em <strong><a href="https://www.javascript.com/">JavasScript</a></strong> usando a biblioteca <strong><a href="https://github.com/discordjs/discord.js">discord.js</a></strong> para se conectar com a API. O objetivo dela é trazer diversão e engajamento para seu servidor do Discord.</p>
+    <h1>Características</h1>
+    <h2>Engajamento</h2>
+     <img src="https://media.discordapp.net/attachments/823374583188553728/940676961372635196/IMG_20220208_153417_308.JPG" class="responsive" alt="exemplo play.">
+     <br><br>
+     <p>Queremos atingir a maior quantidade possível de usuários, os comandos são super faceis de usar e vão direto ao ponto, você não precisa anexar centenas de argumentos ao seu comando para que você toque uma simples música.</p>
+    <h2>Filtros</h2>
+    <img src="https://media.discordapp.net/attachments/823374583188553728/940721034288582686/IMG_20220208_182925_931.JPG" alt="exemplo bassboost.">
+    <br><br>
+    <p>Ao contrário de outros bots, você não precisa pagar para aplicar filtros nas suas músicas, deixe o grave delas mais alto e se divirta!</p>
+    </div>
   </body>
 </html>
