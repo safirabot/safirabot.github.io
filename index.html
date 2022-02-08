@@ -13,6 +13,8 @@
     content="https://cdn.discordapp.com/attachments/737807818609917952/778268263054180352/upload_2020_11_16_13_57_35_574.jpg" />
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Bot Safira ☪</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
 <style>
   
@@ -31,144 +33,17 @@
   font-family: exo, sans-serif;
   
     }
-    body {
-  font-family: 'Titillium Web'; 
-}
+  
     img {
         padding-top: 10%;
     width: 50%;
     height: auto;
         float: center;
 }
-    @media only screen and (min-width: 400px) {
-    img {
-    width: 10%;
-}
-}
-    .button {
-    background-color: #7289DA; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 200%;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-    .button:hover {
-        font-size: 800%; 
-    }
-    .buttonclass {
-        padding-left: 90%;
-    }
 
-    .button4 {border-radius: 20px;}
-    body {
-  font-family: 'Titillium Web'; /*Titillium Web*/
-}
 div {
   text-align: center;
      font-family: 'Titillium Web'; 
-}
-button {
-  border: none;
-  padding: 10px 30px;
-  background-color: #808080;
-  font-size: 15px;
-  font-weight: bold;
-  color: #808080;
-  margin: 10px;
-  outline: none;
-  border-radius: 2px;
-}
-  
-
-  .flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-  }
-  
-  .flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  }
-  
-  text {
-   color: yellow;
-  }
-  
-  h1 {
-  color: white;
-  }
-  
-but {
-  border: none;
-  background-color: #B0BEC5;
-  font-size: 15px;
-  font-weight: bold;
-  color: #555;
-  margin: 8px;
-  outline: none;
-  border-radius: 5px;
-}
-  efect {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  }
-  
-  @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
-  }
-  
-  .efeito { 
-    border: none;
-    color: white;
-    font-size: 243%;
-    font-family: 'Digitalt';
-  }
-    .grow {
-        background-color: #2c2f33; 
-    border: none;
-    color: white;
-        font-size: 115%;
-    }
-.grow:hover {
-  opacity: 0.7
-}
-  .ata {
-    color: white;
-    background-color: #7289da;
-    font-size: 120%;
-  }
-  .ata:hover {
-  opacity: 0.7;
-  }
-  
-  .t {
-    color: white;
-    opacity: 0.5;
-  }
-  
-    .title {
-        margin-top: 0;
-        font-size: 250%;
-        font-family: exo, sans-serif;
-        font-weight: bold;
-        
-    }
-  
-  @import url("https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap");
-
-* {
-  box-sizing: border-box;
 }
 
 .nav {
@@ -204,7 +79,12 @@ but {
     transition: 0.3s;
   }
 }
-
+* {
+	margin:0;
+	padding:0;
+  box-sizing: border-box;
+	
+}
 .nav-item:not(.is-active):hover:before {
   opacity: 1;
   bottom: 0;
@@ -225,17 +105,80 @@ but {
   border-radius: 8px 8px 0 0;
 }
 
-@media (max-width: 580px) {
-  .nav {
-    overflow: auto;
-  }
-}
-
   img {
   padding: 10px;
   border-radius: 25px;
-    width: 250px;
+  width: 250px;
+  animation: img-anim 3s infinite alternate;
   }
+@keyframes img-anim {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+} 
+
+  
+  
+  .title { 
+  margin-top: -80;
+        color: white;
+        font-size: 25px;
+        font-family: 'Inconsolata', monospace !important;
+font-family: 'Roboto Mono', monospace !important;
+    }
+    .addToServerButton {
+    background-color: #05d3e0; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 110%;
+    border-radius: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    animation: add-button-anim 2s;
+}
+@keyframes add-button-anim {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+   .voteButton {
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 110%;
+    border-radius: 10px;
+    margin: 10px 8px;
+    cursor: pointer;
+    animation: vote-button-anim 2s;
+}
+.voteButton:hover {
+
+  }
+@keyframes vote-button-anim {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@379&family=Roboto+Mono&display=swap');
 
 </style>
 </head>  
@@ -249,22 +192,13 @@ but {
   <center>
 <br><br>
 <img src="https://cdn.discordapp.com/attachments/737807818609917952/778268263054180352/upload_2020_11_16_13_57_35_574.jpg" class="" alt="Foto da Safira" width="250px"/>
-<p class="title" style="color:white;">Seja Bem vindo(a) a meu site!</p>
-    <p class="t" stytle="color:white;">Ola! Eu sou a Safira, uma bot de musica, com vários comandos para ouvir aquele batidão no seu servidor.</p>
+<br><br>
+<p style="color:white" class="title">Olá Mundo! Me chamo Safira uma bot de Discord feita pra te alegrar.</p>
+<br><br>
 </center>
-  <div>
-    <a href="https://discord.com/oauth2/authorize?client_id=712661072783474739&permissions=8&scope=applications.commands%20bot"><button class="ata">Me adicione
-      </button></a>
-<a href="#"><button class="grow">Vote em mim
-  </button></a>
-    <br><br><br>
-    <but class="grow">                        
-    <!-- <iframe src="https://discordapp.com/widget?id=676538879720816642&theme=dark" height="500" allowtransparency="true" frameborder="0"></iframe> -->
-    </but>
-    <br><br>
-    <br><br><br><br><br>
-    <!-- <input type="image" name="Foto do votron" id="Foto do votron" src="https://cdn.discordapp.com/attachments/682604588498550805/701591253892071430/1587342779980.png" alt="Foto do votron" width="42" heigth="42" /> -->
-  </div>
-  <!-- Footer -->
+<div>
+<button class="addToServerButton"><i class="fa fa-user-plus"></i> Adicionar ao servidor</button>
+<button class="voteButton"><i class="fa fa-plus"></i> Vote em mim</button>
+
   </body>
 </html>
